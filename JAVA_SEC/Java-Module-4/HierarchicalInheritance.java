@@ -1,0 +1,25 @@
+public class HierarchicalInheritance {
+    public static void main(String[] args) {
+        Cat c = new Cat();
+        c.eat();
+        c.meow();
+    }
+}
+
+class Animal{
+    void eat(){
+        System.out.println("Animals can eat");
+    }
+}
+
+class Dog extends Animal{
+    void bark(){
+        System.out.println("Dogs can bark");
+    }
+}
+
+class Cat extends Animal{
+    void meow(){
+        System.out.println("Cat can meow");
+    }
+}
